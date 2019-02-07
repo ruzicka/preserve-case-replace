@@ -1,0 +1,54 @@
+{
+  "name": "preserve-case-replace",
+  "version": "1.0.0",
+  "description": "Replaces substring in a string while preserving case and grammatical number (plural/singular)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "compile": "tsc",
+    "prepublishOnly": "tsc && npm run lint && npm test",
+    "lint": "tslint --project tsconfig.json",
+    "lint:fix": "tslint --project tsconfig.json --fix",
+    "test": "tsc && jest",
+    "test:coverage": "tsc && jest --coverage",
+    "test:coveralls": "tsc && jest --coverage --coverageReporters=text-lcov && cat ./coverage/lcov.info | coveralls"
+  },
+  "author": "David Ruzicka",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruzicka/preserve-case-replace.git"
+  },
+  "keywords": [
+    "string",
+    "insert",
+    "inject",
+    "multiple",
+    "splice"
+  ],
+  "bugs": {
+    "url": "https://github.com/ruzicka/preserve-case-replace/issues"
+  },
+  "homepage": "https://github.com/ruzicka/preserve-case-replace#readme",
+  "devDependencies": {
+    "@types/jest": "23.3.1",
+    "@types/pluralize": "0.0.29",
+    "@types/ramda": "^0.25.47",
+    "coveralls": "^3.0.2",
+    "jest": "^23.6.0",
+    "ramda": "^0.26.1",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-microsoft-contrib": "^6.0.0",
+    "typescript": "^3.2.2"
+  },
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts"
+  ],
+  "dependencies": {
+    "change-case": "^3.1.0",
+    "pluralize": "^7.0.0"
+  }
+}
