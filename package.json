@@ -1,7 +1,7 @@
 {
   "name": "preserve-case-replace",
   "version": "1.0.0",
-  "description": "Replaces substring in a string while preserving case and grammatical number (plural/singular)",
+  "description": "Replaces substring in a text while preserving case and grammatical number (plural/singular)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -20,11 +20,15 @@
     "url": "git+https://github.com/ruzicka/preserve-case-replace.git"
   },
   "keywords": [
+    "case-preserve",
+    "preserve-case",
     "string",
-    "insert",
-    "inject",
-    "multiple",
-    "splice"
+    "text",
+    "replace",
+    "refactor",
+    "substitute",
+    "plural",
+    "singular"
   ],
   "bugs": {
     "url": "https://github.com/ruzicka/preserve-case-replace/issues"
