@@ -1,6 +1,6 @@
 {
   "name": "preserve-case-replace",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Replaces substring in a text while preserving case and grammatical number (plural/singular)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
